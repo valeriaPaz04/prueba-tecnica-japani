@@ -1,0 +1,110 @@
+[
+  {
+    "id": 101,
+    "default_code": "2152",
+    "name": "Aceite Racer Max 4T 10W-40",
+    "categ_name": "Lubricantes",
+    "list_price": 24500,
+    "qty_available": 12,
+    "active": true
+  },
+  {
+    "id": 102,
+    "default_code": "2499",
+    "name": "Batería YTX7",
+    "categ_name": "Baterías",
+    "list_price": 39500,
+    "qty_available": 4,
+    "active": true
+  },
+  {
+    "id": 103,
+    "default_code": "2500",
+    "name": "Llanta urbana rin 17",
+    "categ_name": "Llantas",
+    "list_price": 120000,
+    "qty_available": 0,
+    "active": true
+  },
+  {
+    "id": 104,
+    "default_code": "2502",
+    "name": "Kit de arrastre 428",
+    "categ_name": "Transmisión",
+    "list_price": 85000,
+    "qty_available": 8,
+    "active": true
+  },
+  {
+    "id": 105,
+    "default_code": "2503",
+    "name": "Pastillas de freno delanteras",
+    "categ_name": "Frenos",
+    "list_price": 18000,
+    "qty_available": -2,
+    "active": true
+  },
+  {
+    "id": 106,
+    "default_code": "2504",
+    "name": "Kit cilindro 125 cc",
+    "categ_name": "Motor",
+    "list_price": 65000,
+    "qty_available": 3,
+    "active": true
+  },
+  {
+    "id": 107,
+    "default_code": "2505",
+    "name": "Aceite referencia descontinuada",
+    "categ_name": "Lubricantes",
+    "list_price": 25000,
+    "qty_available": 20,
+    "active": false
+  },
+  {
+    "id": 108,
+    "default_code": "2DP-E4451-00-50",
+    "name": "Bombillo LED universal",
+    "categ_name": null,
+    "list_price": 3500,
+    "qty_available": 1,
+    "active": true
+  },
+  {
+    "id": 109,
+    "default_code": "2DP-WE763-00",
+    "name": "Cadena reforzada 428H",
+    "categ_name": "Transmisión",
+    "list_price": 13500,
+    "qty_available": 15,
+    "active": true
+  },
+  {
+    "id": 110,
+    "default_code": "2DPE763201",
+    "name": "Bujía estándar",
+    "categ_name": "Encendido",
+    "list_price": 9500,
+    "qty_available": 6,
+    "active": true
+  },
+  {
+    "id": 111,
+    "default_code": "2DPE764100-1PC",
+    "name": "Amortiguador trasero universal",
+    "categ_name": "Suspensión",
+    "list_price": 78000,
+    "qty_available": 5,
+    "active": true
+  },
+  {
+    "id": 112,
+    "default_code": "2DPE764100",
+    "name": "Regulador rectificador 12V",
+    "categ_name": "Eléctrico",
+    "list_price": 46000,
+    "qty_available": 0,
+    "active": true
+  }
+]
