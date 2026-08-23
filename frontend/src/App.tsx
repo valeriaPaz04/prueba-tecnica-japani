@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import type { Product, ProductsSummary } from './types/product';
 import { getProducts, getSummary, type ProductFilters } from './api/products';
+import Header from './components/Header';
+import Summary from './components/Summary';
+import Filters from './components/Filters';
+import ProductList from './components/ProductList';
 
 function App() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -40,7 +44,18 @@ function App() {
 
   return (
     <div>
-      <h1>Japani Digital - Inventario</h1>
+      <Header />
+      <Summary summary={summary} />
+      <Filters
+        search={search}
+        category={category}
+        status={status}
+        onSearchChange={setSearch}
+        onCategoryChange={setCategory}
+        onStatusChange={setStatus}
+      />
+      <ProductList products={products} loading={loading} />
+      {error && <p role="alert">{error}</p>}
     </div>
   );
 }
