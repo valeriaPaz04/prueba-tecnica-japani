@@ -1,3 +1,5 @@
+import './css/Filters.css';
+
 interface FiltersProps {
   search: string;
   category: string;
@@ -16,36 +18,42 @@ function Filters({
   onStatusChange,
 }: FiltersProps) {
   return (
-    <div>
-      <label htmlFor="search">Buscar</label>
-      <input
-        id="search"
-        type="text"
-        value={search}
-        onChange={(e) => onSearchChange(e.target.value)}
-        placeholder="Nombre o código"
-      />
+    <div className="filters">
+      <div className="filter-field">
+        <label htmlFor="search">Buscar</label>
+        <input
+          id="search"
+          type="text"
+          value={search}
+          onChange={(e) => onSearchChange(e.target.value)}
+          placeholder="Nombre o código"
+        />
+      </div>
 
-      <label htmlFor="category">Categoría</label>
-      <input
-        id="category"
-        type="text"
-        value={category}
-        onChange={(e) => onCategoryChange(e.target.value)}
-        placeholder="Ej: Frenos"
-      />
+      <div className="filter-field">
+        <label htmlFor="category">Categoría</label>
+        <input
+          id="category"
+          type="text"
+          value={category}
+          onChange={(e) => onCategoryChange(e.target.value)}
+          placeholder="Ej: Frenos"
+        />
+      </div>
 
-      <label htmlFor="status">Estado</label>
-      <select
-        id="status"
-        value={status}
-        onChange={(e) => onStatusChange(e.target.value)}
-      >
-        <option value="">Todos</option>
-        <option value="disponible">Disponible</option>
-        <option value="stock_bajo">Stock bajo</option>
-        <option value="sin_stock">Sin stock</option>
-      </select>
+      <div className="filter-field">
+        <label htmlFor="status">Estado</label>
+        <select
+          id="status"
+          value={status}
+          onChange={(e) => onStatusChange(e.target.value)}
+        >
+          <option value="">Todos</option>
+          <option value="disponible">Disponible</option>
+          <option value="stock_bajo">Stock bajo</option>
+          <option value="sin_stock">Sin stock</option>
+        </select>
+      </div>
     </div>
   );
 }

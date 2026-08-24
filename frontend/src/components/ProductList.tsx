@@ -1,4 +1,5 @@
 import type { Product } from '../types/product';
+import './css/ProductList.css';
 
 interface ProductListProps {
   products: Product[];
@@ -21,16 +22,18 @@ function ProductList({ products, loading }: ProductListProps) {
   }
 
   return (
-    <ul>
+    <ul className="product-list">
       {products.map((product) => (
-        <li key={product.id}>
-          <img src={`/products/${product.code}.jpg`} alt={product.name} />
+        <li key={product.id} className="product-card">
+          <img src={`/images/products/${product.code}.jpg`} alt={product.name} />
           <h3>{product.name}</h3>
           <p>SKU: {product.code}</p>
-          <p>{product.category}</p>
-          <p>${product.list_price.toLocaleString('es-CO')}</p>
+          <p className="product-category">{product.category}</p>
+          <p className="product-price">${product.list_price.toLocaleString('es-CO')}</p>
           <p>Cantidad disponible: {product.qty_available}</p>
-          <p>{statusLabels[product.status]}</p>
+          <span className="status-badge" data-status={product.status}>
+            {statusLabels[product.status]}
+          </span>
           <p>Valor en inventario: ${product.inventory_value.toLocaleString('es-CO')}</p>
         </li>
       ))}

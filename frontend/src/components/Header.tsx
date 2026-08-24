@@ -1,10 +1,10 @@
-import './Header.css';
+import './css/Header.css';
 
 function Header() {
   return (
     <header className="header">
-      <img src="/logoJapani.png" alt="Japani Digital" />
-      <h1>Inventario</h1>
+      <img src="/images/logos/logoJapani.png" alt="Japani Digital" />
+      <h1>Catálogo Japani Racer</h1>
     </header>
   );
 }
